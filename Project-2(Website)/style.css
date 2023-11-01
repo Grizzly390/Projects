@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./Assets/background-image.png);
+    background-position: center top;
+    background-attachment:fixed;
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bckgrnd{
+    width: 100vw;
+    height: 100vh;
+}
+
+.navdiv{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    color: #959697;
+}
+
+li a{
+    margin-right: 25px;
+    text-decoration: none;
+    color: #959697;
+}
+.navbtn{
+    background-color: #EE0983;
+    font-size: 20px;
+    color: white;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.search button{
+    margin-left: 1vw;
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+
+}
+
+.carloss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carloss button{
+    padding: 10px;
+    border-radius: 30px;
+    width: 9vw;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    box-shadow: 0px -2px 10px 10px #DCDCDC;
+    background-color: white;
+    border: none;
+}
+
+
+.middle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle img{
+    position: relative;
+    top: 0;
+}
+
+.btn1{
+    background-color: #EE0983;
+    color: white;
+    border: none;
+}
+
+.btn2{
+    border: 1px solid #EE0983;
+    background-color: white;
+    color: #EE0983;
+}
+
+.hero{
+    position: relative;
+}
+.heroimg{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hero button{
+    position: absolute;
+    right: 10vw;
+    top: 20vh;
+    padding: 10px;
+    border-radius: 30px;
+    width: 10vw;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    box-shadow: 5px 7px 10px 12px #DCDCDC;
+    background-color: white;
+    border: none;
+}
+
+.content{
+    padding-left: 8vw;
+    width: 500px;
+}
+
+.content h1{
+    font-size: 70px;
+}
+
+.content p{
+    font-size: 30px;
+    color: #959697;
+}
+
+.content button{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+footer{
+    padding-top: 2vh;
+    display: flex;
+}
+
+footer p{
+    display: inline-flex;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 1vw;
+    color: #959697;
+}
+footer p img{
+    margin-right: 1vw;
+}
+
+@media only screen and (max-width:600px) {
+    .navdiv, .middle, .footer{
+        flex-direction: column;
+    }
+}
